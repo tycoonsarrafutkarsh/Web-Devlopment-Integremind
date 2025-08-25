@@ -1,0 +1,22 @@
+.chessboard {
+  width: 320px;   /* 8 squares × 40px */
+  height: 320px;
+  display: grid;
+  grid-template-columns: repeat(8, 40px);
+  grid-template-rows: repeat(8, 40px);
+  border: 3px solid black;
+}
+
+.chessboard div {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black; /* adds visible square borders */
+}
+
+.chessboard div:nth-child(odd) {
+  background: #f0d9b5; /* light */
+}
+
+.chessboard div:nth-child(even) {
+  background: #b58863; /* dark */
+}
